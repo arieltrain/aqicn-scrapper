@@ -43,19 +43,18 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+      
+          git pull --rebase origin main
+      
           if [ -f aqicn.csv ]; then
-            echo "CSV ditemukan"
-
             git add aqicn.csv
-
-            if git diff --cached --quiet; then
-              echo "Tidak ada perubahan."
-            else
+      
+            if ! git diff --cached --quiet; then
               git commit -m "Update AQI $(date '+%Y-%m-%d %H:%M:%S')"
-              git push
+              git push origin main
+            else
+              echo "Tidak ada perubahan."
             fi
-
           else
             echo "aqicn.csv tidak ditemukan!"
             exit 1
