@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from datetime import datetime
 
-API_KEY = os.environ["bbcda17b-95b1-431b-ace3-c2d98695f3e5"]
+API_KEY = os.environ["IQAIR_API_KEY"]
 
 CITY = "Jakarta"
 STATE = "Jakarta"
