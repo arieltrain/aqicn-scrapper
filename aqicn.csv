@@ -1209,3 +1209,4 @@ datetime,city,aqicn,aqius,maincn,mainus,temperature,humidity,pressure,wind_speed
 2026-09-05 08:00:39,Jakarta,86,157,p2,p2,33,36,1009,5.56,5
 2026-09-05 09:00:37,Jakarta,68,134,p2,p2,32,46,1009,7.22,10
 2026-09-05 10:00:37,Jakarta,58,115,p2,p2,31,50,1008,5.56,1
+2026-09-05 11:00:39,Jakarta,53,107,s2,o3,30,51,1009,5,359
